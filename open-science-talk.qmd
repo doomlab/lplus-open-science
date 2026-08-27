@@ -11,7 +11,7 @@ execute:
 bibliography: references.bib
 ---
 
-## Overview  {.smaller}
+## Overview {.smaller}
 
 - Open science practices are increasingly expected in the social and behavioral sciences
 - Developmental research has adopted them more slowly
@@ -20,7 +20,7 @@ bibliography: references.bib
 - We shall examine open science practices across a full range of options!
 - @gennetian2022
 
-## Structure  {.smaller}
+## Structure {.smaller}
 
 1.  Open science foundations
 2.  The full scope of openness: materials, code, access, translation
@@ -29,7 +29,7 @@ bibliography: references.bib
 5.  Synthetic data generation in R and JASP
 6.  Questions, ideas, and brainstorming
 
-## Open Science Foundations  {.smaller}
+## Open Science Foundations {.smaller}
 
 Open science is often reduced to "sharing data," but the broader set of practices includes:
 
@@ -40,11 +40,11 @@ Open science is often reduced to "sharing data," but the broader set of practice
 - Replication and data reuse across labs
 - @munafò2017; @al-hoorie2024; @marsden2018; @marsden2023
 
-## Open Science Foundations  {.smaller}
+## Open Science Foundations {.smaller}
 
 ![](images/clipboard-4219837259.png)
 
-## Barriers to Open Science   {.smaller}
+## Barriers to Open Science {.smaller}
 
 - Descriptive/qualitative research doesn't seem to match
 - Some designs do not fit preregistration templates
@@ -53,7 +53,7 @@ Open science is often reduced to "sharing data," but the broader set of practice
 - A call to change the toolkits
 - @kosie2024
 
-## Open Science Encourages Error Correction  {.smaller}
+## Open Science Encourages Error Correction {.smaller}
 
 - Preregistration constrains post hoc flexibility in analytic decisions
 - Shared materials let other labs build directly on an existing paradigm rather than reinventing it
@@ -61,7 +61,7 @@ Open science is often reduced to "sharing data," but the broader set of practice
 - Cross-lab replication is often the only way to separate a real effects from a sampling or site-specific artifact
 - @strand2025
 
-## Full Scope: Preregistration  {.smaller}
+## Full Scope: Preregistration {.smaller}
 
 - States hypotheses, sample size rationale, and planned analyses before data collection
 - Registered Reports go a step further: peer review of the design happens before results exist, and publication does not depend on the outcome
@@ -69,7 +69,7 @@ Open science is often reduced to "sharing data," but the broader set of practice
 - Deviations from a preregistration are not failures; they should simply be reported as deviations
 - @hobson2019; @nosek2014; @d.chambers2014
 
-## Full Scope: Open Materials  {.smaller}
+## Full Scope: Open Materials {.smaller}
 
 - Stimuli, coding manuals, and experiment scripts allow direct reuse and extension by other labs
 - For cross-linguistic work, this includes translated and adapted versions of an instrument, not only the original-language materials
@@ -77,7 +77,7 @@ Open science is often reduced to "sharing data," but the broader set of practice
 - Without this documentation, a "translated" instrument in another lab's hands may not be measuring the same construct
 - @masuzzo2017 \*\*
 
-## Full Scope: Open and Reproducible Code  {.smaller}
+## Full Scope: Open and Reproducible Code {.smaller}
 
 - Analysis scripts should run end to end on a **saved** environment, ideally producing the paper's reported numbers and figures directly
 - Version control (Git/GitHub) supports both collaboration and a citable, time-stamped record of the analysis – especially if you sync with Zenodo!
@@ -85,14 +85,14 @@ Open science is often reduced to "sharing data," but the broader set of practice
 - @suchow2026; @siraji2024; @foll2026; @weberpals2024
 - BTSCon Plug! <https://bigteamscienceconference.github.io/>
 
-## Full Scope: Open Access and Preprints  {.smaller}
+## Full Scope: Open Access and Preprints {.smaller}
 
 - Preprint servers allow a manuscript to be public before or during peer review
 - Useful for establishing priority and for getting feedback from a wider, more international audience than a single review process reaches \*\*
 - Complements, rather than replaces, formal open-access publication
 - @moshontz2021; @sarabipour2019; @soderberg2020
 
-## Full Scope: Replication and Reuse  {.smaller}
+## Full Scope: Replication and Reuse {.smaller}
 
 ![](images/clipboard-2652945884.png)
 
@@ -102,7 +102,7 @@ Open science is often reduced to "sharing data," but the broader set of practice
 
 - @plesser2018; @baumgartner2023; @forscher2020; @koch2016
 
-## Full Scope: Cross Cultural Considerations   {.smaller}
+## Full Scope: Cross Cultural Considerations {.smaller}
 
 - Most open science norms were developed within WEIRD contexts
 
@@ -114,7 +114,7 @@ Open science is often reduced to "sharing data," but the broader set of practice
 
 - @syed; @srivastava
 
-## Full Scope: Cross Cultural Considerations  {.smaller}
+## Full Scope: Cross Cultural Considerations {.smaller}
 
 - Ethical approval should reflect local guidelines at each site, not only the lead institution's IRB
 
@@ -124,13 +124,13 @@ Open science is often reduced to "sharing data," but the broader set of practice
 
 - @weinstein2026
 
-## Full Scope: Cross Cultural Considerations  {.smaller}
+## Full Scope: Cross Cultural Considerations {.smaller}
 
 - Translated materials need local review, not just linguistic back-translation, to confirm they carry the same meaning and are ethically appropriate in context
 - Authorship and credit for local collaborators and research assistants should be agreed on before data collection, particularly in large cross-linguistic networks
 - Data-sharing agreements should be negotiated per site where local norms or regulations differ, rather than defaulting to a single blanket policy
 
-## Infrastructure: Where OSF Fits Now   {.smaller}
+## Infrastructure: Where OSF Fits Now {.smaller}
 
 - COS announcement in August 2026 about no new projects
 
@@ -138,7 +138,7 @@ Open science is often reduced to "sharing data," but the broader set of practice
 
 - <https://www.cos.io/osf-changes>
 
-## Infrastructure: General-Purpose Repositories  {.smaller}
+## Infrastructure: General-Purpose Repositories {.smaller}
 
 - **Zenodo**: free, operated by CERN/OpenAIRE, up to 50 GB per dataset, DOI issued, integrates directly with GitHub for code archiving
 - **Figshare**: free up to 20 GB, paid tiers for larger deposits, strong citation and versioning support
@@ -147,7 +147,7 @@ Open science is often reduced to "sharing data," but the broader set of practice
 - **TROLLing** (the Tromsø Repository of Language and Linguistics): curators provide guidance on structuring and documenting a linguistic dataset, help you make items FAIR
 - *note: there are more!*
 
-## Licensing: Terminology  {.smaller}
+## Licensing: Terminology {.smaller}
 
 - **CC0** (public domain dedication): no rights reserved; the most permissive option, and the default recommendation from Dataverse for public datasets
 - **CC BY**: reuse permitted with attribution; common default for shared materials and stimuli
@@ -156,11 +156,11 @@ Open science is often reduced to "sharing data," but the broader set of practice
 - Recommended for data, materials
 - <https://creativecommons.org/cc-licenses/>
 
-## Licensing: Terminology  {.smaller}
+## Licensing: Terminology {.smaller}
 
 ![](images/clipboard-2848583701.png)
 
-## Ethics: Openness Is Not Automatically Ethical  {.smaller}
+## Ethics: Openness Is Not Automatically Ethical {.smaller}
 
 Standard open data norms assume participants who can consent for themselves. Research with children complicates this at nearly every stage:
 
@@ -169,14 +169,14 @@ Standard open data norms assume participants who can consent for themselves. Res
 - Video and audio recordings are, by nature, difficult to fully de-identify
 - @marschik2023; @patrinos2022; @begumali2024; @oakley2025
 
-## Ethics: In the Data Plan   {.smaller}
+## Ethics: In the Data Plan {.smaller}
 
 - Decide the scope of intended data sharing before IRB submission, not after
 - Write consent language that explicitly names future reuse and sharing, rather than leaving it implicit
 - Separate what can be public (stimuli, code, aggregate results) from what must remain restricted (raw recordings, identifiable transcripts)
 - Document these decisions so that future collaborators inherit the reasoning, not just the constraints
 
-## Tutorial(ish): Synthetic Data Generation  {.smaller}
+## Tutorial(ish): Synthetic Data Generation {.smaller}
 
 - Synthetic data offers a way to balance openness and confidentiality
 
@@ -190,7 +190,7 @@ Standard open data norms assume participants who can consent for themselves. Res
 
 - @nowok2016; @jordon
 
-## Synthetic Data in R  {.smaller}
+## Synthetic Data in R {.smaller}
 
 The `synthpop` package is a widely used implementation, alongside `simstudy` and `faux`. The general approach:
 
@@ -200,7 +200,7 @@ The `synthpop` package is a widely used implementation, alongside `simstudy` and
 
 - @nowok2016; @debruine2021; @goldfeld2026
 
-## Synthetic Data in R: Setup  {.smaller}
+## Synthetic Data in R: Setup {.smaller}
 
 ```{r}
 #| label: setup
@@ -209,7 +209,7 @@ library(faux)
 library(synthpop)
 ```
 
-## Synthetic Data in R: "Real" Data  {.smaller}
+## Synthetic Data in R: "Real" Data {.smaller}
 
 Simulate a small study: vocabulary score predicted by age (months) and condition (bilingual vs. monolingual), with some correlation between age and vocabulary.
 
@@ -238,7 +238,7 @@ head(real_data)
 summary(real_data)
 ```
 
-## Synthetic Data in R: `synthpop`  {.smaller}
+## Synthetic Data in R: `synthpop` {.smaller}
 
 `synthpop` learns the joint structure of the real dataset, including relationships between variables, and generates new records that preserve that structure without corresponding to real individuals. `child_id` is dropped first since it is just an identifier.
 
@@ -252,7 +252,7 @@ synth_data <- synth_result$syn
 head(synth_data)
 ```
 
-## Synthetic Data in R: `synthpop`  {.smaller}
+## Synthetic Data in R: `synthpop` {.smaller}
 
 ```{r}
 #| label: synthpop-compare
@@ -264,7 +264,7 @@ lm(vocab_score ~ age_months + condition, data = synth_input)
 lm(vocab_score ~ age_months + condition, data = synth_data)
 ```
 
-## Synthetic Data in R: `faux`  {.smaller}
+## Synthetic Data in R: `faux` {.smaller}
 
 `faux::sim_df()` takes an existing data frame and generates a new synthetic dataset that preserves its means, standard deviations, and correlations among numeric variables — the same basic goal as `synthpop`, but using `faux`'s simpler multivariate-normal-based approach.
 
@@ -280,7 +280,7 @@ head(faux_synth)
 summary(faux_synth)
 ```
 
-## Synthetic Data in R: `faux`  {.smaller}
+## Synthetic Data in R: `faux` {.smaller}
 
 ```{r}
 #| label: faux-compare
@@ -295,34 +295,34 @@ lm(vocab_score ~ age_months + condition, data = faux_synth)
 
 `sim_design()` remains useful separately, for the case where there is no existing dataset yet and a study is being simulated from specified effect sizes ahead of data collection (e.g., for a power analysis or preregistration).
 
-## Synthetic Data in JASP  {.smaller}
+## Synthetic Data in JASP {.smaller}
 
 - JASP supports simulating data for teaching and pipeline testing without requiring R syntax
 - Useful for collaborators who are less comfortable in code but need to evaluate an analysis plan
 
-## Synthetic Data in JASP  {.smaller}
+## Synthetic Data in JASP {.smaller}
 
 - Be sure to click community!
 
 ![](images/clipboard-51684848.png)
 
-## Synthetic Data in JASP  {.smaller}
+## Synthetic Data in JASP {.smaller}
 
 ![](images/clipboard-979938235.png)
 
-## Synthetic Data in JASP  {.smaller}
+## Synthetic Data in JASP {.smaller}
 
 ![](images/clipboard-2235724916.png)
 
-## Synthetic Data in JASP  {.smaller}
+## Synthetic Data in JASP {.smaller}
 
 ![](images/clipboard-3567523033.png)
 
-## Synthetic Data in JASP  {.smaller}
+## Synthetic Data in JASP {.smaller}
 
 ![](images/clipboard-1058086211.png)
 
-## **What You've Learned**  {.smaller}
+## **What You've Learned** {.smaller}
 
 - Open science is a full set of practices, not just data sharing: preregistration, materials, code, access, and replication all count
 
@@ -336,4 +336,4 @@ lm(vocab_score ~ age_months + condition, data = faux_synth)
 
 - Synthetic data (via `synthpop` or `faux`) offers a way to prototype, teach, and preregister analysis pipelines without exposing real data
 
-## References   {.smaller}
+## References {.smaller}
