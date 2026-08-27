@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="open-science-talk_files/libs/clipboard/clipboard.min.js"></script>
+<script src="open-science-talk_files/libs/quarto-html/tabby.min.js"></script>
+<script src="open-science-talk_files/libs/quarto-html/popper.min.js"></script>
+<script src="open-science-talk_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="open-science-talk_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="open-science-talk_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="open-science-talk_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.26">
+
+  <meta name="author" content="Erin Buchanan, Ph.D.">
+  <title>Open Science for Language Acquisition Research</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="open-science-talk_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="open-science-talk_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="open-science-talk_files/libs/revealjs/dist/theme/quarto-534cd8e3a96973385dffff3f4709048d.css">
+  <link href="open-science-talk_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="open-science-talk_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="open-science-talk_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="open-science-talk_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Open Science for Language Acquisition Research</h1>
+  <p class="subtitle">From Principles to Practices</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Erin Buchanan, Ph.D. 
+</div>
+</div>
+</div>
+
+</section>
+<section id="overview" class="slide level2 smaller">
+<h2>Overview</h2>
+<ul>
+<li>Open science practices are increasingly expected in the social and behavioral sciences</li>
+<li>Developmental research has adopted them more slowly
+<ul>
+<li>Descriptive rather than confirmatory **</li>
+</ul></li>
+<li>Research often involves special populations, while open science norms were developed around adult populations</li>
+<li>We shall examine open science practices across a full range of options!</li>
+<li><span class="citation" data-cites="gennetian2022">Gennetian, Frank, and Tamis-LeMonda (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></li>
+</ul>
+</section>
+<section id="structure" class="slide level2 smaller scrollable">
+<h2>Structure</h2>
+<ol type="1">
+<li>Open science foundations</li>
+<li>The full scope of openness: materials, code, access, translation</li>
+<li>Repositories, licenses, and infrastructure</li>
+<li>Ethics and research with children</li>
+<li>Synthetic data generation in R and JASP</li>
+<li>Questions, ideas, and brainstorming</li>
+</ol>
+</section>
+<section id="open-science-foundations" class="slide level2 smaller">
+<h2>Open Science Foundations</h2>
+<p>Open science is often reduced to “sharing data,” but the broader set of practices includes:</p>
+<ul>
+<li>Preregistration and registered reports</li>
+<li>Open materials (stimuli, protocols, coding manuals, translated instruments)</li>
+<li>Open and reproducible analysis code</li>
+<li>Open access publication and preprints</li>
+<li>Replication and data reuse across labs</li>
+<li><span class="citation" data-cites="munafò2017">(<a href="#/references" role="doc-biblioref" onclick=""><strong>munafò2017?</strong></a>)</span>; <span class="citation" data-cites="al-hoorie2024">Al-Hoorie et al. (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>; <span class="citation" data-cites="marsden2018">(<a href="#/references" role="doc-biblioref" onclick=""><strong>marsden2018?</strong></a>)</span>; <span class="citation" data-cites="marsden2023">(<a href="#/references" role="doc-biblioref" onclick=""><strong>marsden2023?</strong></a>)</span></li>
+</ul>
+</section>
+<section id="open-science-foundations-1" class="slide level2 smaller">
+<h2>Open Science Foundations</h2>
+
+<img data-src="images/clipboard-4219837259.png" class="r-stretch"></section>
+<section id="barriers-to-open-science" class="slide level2 smaller">
+<h2>Barriers to Open Science</h2>
+<ul>
+<li>Descriptive/qualitative research doesn’t seem to match</li>
+<li>Some designs do not fit preregistration templates</li>
+<li>Small, hard-won samples make replication difficult</li>
+<li>Identifiability of participants complicates data sharing</li>
+<li>A call to change the toolkits</li>
+<li><span class="citation" data-cites="kosie2024">(<a href="#/references" role="doc-biblioref" onclick=""><strong>kosie2024?</strong></a>)</span></li>
+</ul>
+</section>
+<section id="open-science-encourages-error-correction" class="slide level2 smaller">
+<h2>Open Science Encourages Error Correction</h2>
+<ul>
+<li>Preregistration constrains post hoc flexibility in analytic decisions</li>
+<li>Shared materials let other labs build directly on an existing paradigm rather than reinventing it</li>
+<li>Reproducible code catches errors before, not after, publication</li>
+<li>Cross-lab replication is often the only way to separate a real effects from a sampling or site-specific artifact</li>
+<li><span class="citation" data-cites="strand2025">(<a href="#/references" role="doc-biblioref" onclick=""><strong>strand2025?</strong></a>)</span></li>
+</ul>
+</section>
+<section id="full-scope-preregistration" class="slide level2 smaller">
+<h2>Full Scope: Preregistration</h2>
+<ul>
+<li>States hypotheses, sample size rationale, and planned analyses before data collection</li>
+<li>Registered Reports go a step further: peer review of the design happens before results exist, and publication does not depend on the outcome</li>
+<li>Templates exist for both experimental designs (e.g., AsPredicted, OSF) and, increasingly, for longitudinal and descriptive work (Kosie &amp; Lew-Williams, 2024)</li>
+<li>Deviations from a preregistration are not failures; they should simply be reported as deviations</li>
+<li><span class="citation" data-cites="hobson2019">(<a href="#/references" role="doc-biblioref" onclick=""><strong>hobson2019?</strong></a>)</span>; <span class="citation" data-cites="nosek2014">(<a href="#/references" role="doc-biblioref" onclick=""><strong>nosek2014?</strong></a>)</span>; <span class="citation" data-cites="d.chambers2014">(<a href="#/references" role="doc-biblioref" onclick=""><strong>d.chambers2014?</strong></a>)</span></li>
+</ul>
+</section>
+<section id="full-scope-open-materials" class="slide level2 smaller">
+<h2>Full Scope: Open Materials</h2>
+<ul>
+<li>Stimuli, coding manuals, and experiment scripts allow direct reuse and extension by other labs</li>
+<li>For cross-linguistic work, this includes translated and adapted versions of an instrument, not only the original-language materials</li>
+<li>Documentation of the translation and adaptation process (who translated, back-translation procedures, piloting) is itself a research output worth sharing</li>
+<li>Without this documentation, a “translated” instrument in another lab’s hands may not be measuring the same construct</li>
+<li><span class="citation" data-cites="masuzzo2017">(<a href="#/references" role="doc-biblioref" onclick=""><strong>masuzzo2017?</strong></a>)</span> **</li>
+</ul>
+</section>
+<section id="full-scope-open-and-reproducible-code" class="slide level2 smaller">
+<h2>Full Scope: Open and Reproducible Code</h2>
+<ul>
+<li>Analysis scripts should run end to end on a <strong>saved</strong> environment, ideally producing the paper’s reported numbers and figures directly</li>
+<li>Version control (Git/GitHub) supports both collaboration and a citable, time-stamped record of the analysis – especially if you sync with Zenodo!</li>
+<li>Code and data can carry different licenses and be shared even when the underlying data cannot (see next section)</li>
+<li><span class="citation" data-cites="suchow2026">(<a href="#/references" role="doc-biblioref" onclick=""><strong>suchow2026?</strong></a>)</span>; <span class="citation" data-cites="siraji2024">(<a href="#/references" role="doc-biblioref" onclick=""><strong>siraji2024?</strong></a>)</span>; <span class="citation" data-cites="foll2026">(<a href="#/references" role="doc-biblioref" onclick=""><strong>foll2026?</strong></a>)</span>; <span class="citation" data-cites="weberpals2024">(<a href="#/references" role="doc-biblioref" onclick=""><strong>weberpals2024?</strong></a>)</span></li>
+<li>BTSCon Plug! <a href="https://bigteamscienceconference.github.io/" class="uri">https://bigteamscienceconference.github.io/</a></li>
+</ul>
+</section>
+<section id="full-scope-open-access-and-preprints" class="slide level2 smaller">
+<h2>Full Scope: Open Access and Preprints</h2>
+<ul>
+<li>Preprint servers allow a manuscript to be public before or during peer review</li>
+<li>Useful for establishing priority and for getting feedback from a wider, more international audience than a single review process reaches **</li>
+<li>Complements, rather than replaces, formal open-access publication</li>
+<li><span class="citation" data-cites="moshontz2021">(<a href="#/references" role="doc-biblioref" onclick=""><strong>moshontz2021?</strong></a>)</span>; <span class="citation" data-cites="sarabipour2019">(<a href="#/references" role="doc-biblioref" onclick=""><strong>sarabipour2019?</strong></a>)</span>; <span class="citation" data-cites="soderberg2020">(<a href="#/references" role="doc-biblioref" onclick=""><strong>soderberg2020?</strong></a>)</span></li>
+</ul>
+</section>
+<section id="full-scope-replication-and-reuse" class="slide level2 smaller">
+<h2>Full Scope: Replication and Reuse</h2>
+
+<img data-src="images/clipboard-2652945884.png" class="r-stretch"><ul>
+<li><p>Check out the Turing Way!</p></li>
+<li><p>Large scale studies and collaborative networks allow us to do this cool work easier</p></li>
+<li><p><span class="citation" data-cites="plesser2018">Plesser (<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span>; <span class="citation" data-cites="baumgartner2023">Baumgartner et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>; <span class="citation" data-cites="forscher2020">Forscher et al. (<a href="#/references" role="doc-biblioref" onclick="">2020</a>)</span>; <span class="citation" data-cites="koch2016">Koch and Jones (<a href="#/references" role="doc-biblioref" onclick="">2016</a>)</span></p></li>
+</ul>
+</section>
+<section id="full-scope-cross-cultural-considerations" class="slide level2 smaller">
+<h2>Full Scope: Cross Cultural Considerations</h2>
+<ul>
+<li><p>Most open science norms were developed within WEIRD contexts</p></li>
+<li><p>Applying them unreflectively across a cross-cultural or multi-site collaboration can reproduce inequities</p></li>
+<li><p>Ethical review standards, definitions of consent, and norms around family involvement in decision-making vary by country and community</p></li>
+<li><p>Data-sharing expectations from funders are frequently set in high-income countries and may not fit the constraints of every site</p></li>
+<li><p><span class="citation" data-cites="syed">Syed and Kathawalla (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span>; <span class="citation" data-cites="srivastava">Srivastava et al. (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span></p></li>
+</ul>
+</section>
+<section id="full-scope-cross-cultural-considerations-1" class="slide level2 smaller">
+<h2>Full Scope: Cross Cultural Considerations</h2>
+<ul>
+<li><p>Ethical approval should reflect local guidelines at each site, not only the lead institution’s IRB</p></li>
+<li><p>Local researchers are often better positioned to navigate informed consent, including family involvement and protection against coercion</p></li>
+<li><p>Slower, more participatory timelines can conflict with publication incentives, which reward fast turnaround</p></li>
+<li><p><span class="citation" data-cites="weinstein2026">Weinstein et al. (<a href="#/references" role="doc-biblioref" onclick="">2026</a>)</span></p></li>
+</ul>
+</section>
+<section id="full-scope-cross-cultural-considerations-2" class="slide level2 smaller">
+<h2>Full Scope: Cross Cultural Considerations</h2>
+<ul>
+<li>Translated materials need local review, not just linguistic back-translation, to confirm they carry the same meaning and are ethically appropriate in context</li>
+<li>Authorship and credit for local collaborators and research assistants should be agreed on before data collection, particularly in large cross-linguistic networks</li>
+<li>Data-sharing agreements should be negotiated per site where local norms or regulations differ, rather than defaulting to a single blanket policy</li>
+</ul>
+</section>
+<section id="infrastructure-where-osf-fits-now" class="slide level2 smaller">
+<h2>Infrastructure: Where OSF Fits Now</h2>
+<ul>
+<li><p>COS announcement in August 2026 about no new projects</p></li>
+<li><p>Registration and pre-print services will still be available</p></li>
+<li><p><a href="https://www.cos.io/osf-changes" class="uri">https://www.cos.io/osf-changes</a></p></li>
+</ul>
+</section>
+<section id="infrastructure-general-purpose-repositories" class="slide level2 smaller">
+<h2>Infrastructure: General-Purpose Repositories</h2>
+<ul>
+<li><strong>Zenodo</strong>: free, operated by CERN/OpenAIRE, up to 50 GB per dataset, DOI issued, integrates directly with GitHub for code archiving</li>
+<li><strong>Figshare</strong>: free up to 20 GB, paid tiers for larger deposits, strong citation and versioning support</li>
+<li><strong>Harvard Dataverse</strong>: free, open-source platform, strongly encourages CC0 for public datasets, good institutional metadata support</li>
+<li><strong>Research Box:</strong> a newer service that integrates As Predicted, As Collected, and allows for a cool grid display of research, synced with Zenodo for DOIs.</li>
+<li><strong>TROLLing</strong> (the Tromsø Repository of Language and Linguistics): curators provide guidance on structuring and documenting a linguistic dataset, help you make items FAIR</li>
+<li><em>note: there are more!</em></li>
+</ul>
+</section>
+<section id="licensing-terminology" class="slide level2 smaller">
+<h2>Licensing: Terminology</h2>
+<ul>
+<li><strong>CC0</strong> (public domain dedication): no rights reserved; the most permissive option, and the default recommendation from Dataverse for public datasets</li>
+<li><strong>CC BY</strong>: reuse permitted with attribution; common default for shared materials and stimuli</li>
+<li><strong>CC BY-NC / CC BY-SA / CC BY-ND</strong>: add restrictions (non-commercial, share-alike, no-derivatives) that can limit reuse and should be chosen deliberately, not by default</li>
+<li>A license should be chosen at deposit time, not left blank; an unlicensed dataset is not legally reusable even if it is technically downloadable</li>
+<li>Recommended for data, materials</li>
+<li><a href="https://creativecommons.org/cc-licenses/" class="uri">https://creativecommons.org/cc-licenses/</a></li>
+</ul>
+</section>
+<section id="licensing-terminology-1" class="slide level2 smaller">
+<h2>Licensing: Terminology</h2>
+
+<img data-src="images/clipboard-2848583701.png" class="r-stretch"></section>
+<section id="ethics-openness-is-not-automatically-ethical" class="slide level2 smaller">
+<h2>Ethics: Openness Is Not Automatically Ethical</h2>
+<p>Standard open data norms assume participants who can consent for themselves. Research with children complicates this at nearly every stage:</p>
+<ul>
+<li>Parental consent does not resolve every ethical question a study raises</li>
+<li>Assent, where developmentally appropriate, should be revisited as children grow older</li>
+<li>Video and audio recordings are, by nature, difficult to fully de-identify</li>
+<li><span class="citation" data-cites="marschik2023">Marschik et al. (<a href="#/references" role="doc-biblioref" onclick="">2023</a>)</span>; <span class="citation" data-cites="patrinos2022">Patrinos et al. (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span>; <span class="citation" data-cites="begumali2024">Begum Ali et al. (<a href="#/references" role="doc-biblioref" onclick="">2024</a>)</span>; <span class="citation" data-cites="oakley2025">Oakley et al. (<a href="#/references" role="doc-biblioref" onclick="">2025</a>)</span></li>
+</ul>
+</section>
+<section id="ethics-in-the-data-plan" class="slide level2 smaller">
+<h2>Ethics: In the Data Plan</h2>
+<ul>
+<li>Decide the scope of intended data sharing before IRB submission, not after</li>
+<li>Write consent language that explicitly names future reuse and sharing, rather than leaving it implicit</li>
+<li>Separate what can be public (stimuli, code, aggregate results) from what must remain restricted (raw recordings, identifiable transcripts)</li>
+<li>Document these decisions so that future collaborators inherit the reasoning, not just the constraints</li>
+</ul>
+</section>
+<section id="tutorialish-synthetic-data-generation" class="slide level2 smaller">
+<h2>Tutorial(ish): Synthetic Data Generation</h2>
+<ul>
+<li><p>Synthetic data offers a way to balance openness and confidentiality</p></li>
+<li><p>It preserves the statistical structure of a dataset without exposing identifiable records</p>
+<ul>
+<li><p>Sharing realistic data structures without exposing real children’s data</p></li>
+<li><p>Piloting and preregistering analysis pipelines before data collection is complete</p></li>
+<li><p>Teaching statistical methods without needing access to restricted datasets</p></li>
+</ul></li>
+<li><p><span class="citation" data-cites="nowok2016">Nowok, Raab, and Dibben (<a href="#/references" role="doc-biblioref" onclick="">2016</a>)</span>; <span class="citation" data-cites="jordon">Jordon et al. (<a href="#/references" role="doc-biblioref" onclick="">n.d.</a>)</span></p></li>
+</ul>
+</section>
+<section id="synthetic-data-in-r" class="slide level2 smaller scrollable">
+<h2>Synthetic Data in R</h2>
+<p>The <code>synthpop</code> package is a widely used implementation, alongside <code>simstudy</code> and <code>faux</code>. The general approach:</p>
+<ol type="1">
+<li>Characterize the structure (distributions, correlations) of the real dataset</li>
+<li>Generate synthetic records that preserve that structure without corresponding to real individuals</li>
+<li>Validate by comparing summary statistics and model output across real and synthetic versions</li>
+</ol>
+<ul>
+<li><span class="citation" data-cites="nowok2016">Nowok, Raab, and Dibben (<a href="#/references" role="doc-biblioref" onclick="">2016</a>)</span>; <span class="citation" data-cites="debruine2021">DeBruine (<a href="#/references" role="doc-biblioref" onclick="">2021</a>)</span>; <span class="citation" data-cites="goldfeld2026">Goldfeld and Wujciak-Jens (<a href="#/references" role="doc-biblioref" onclick="">2026</a>)</span></li>
+</ul>
+</section>
+<section id="synthetic-data-in-r-setup" class="slide level2 smaller">
+<h2>Synthetic Data in R: Setup</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="co"># install.packages(c("faux", "synthpop"))</span></span>
+<span id="cb1-2"><a href=""></a><span class="fu">library</span>(faux)</span>
+<span id="cb1-3"><a href=""></a><span class="fu">library</span>(synthpop)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="synthetic-data-in-r-real-data" class="slide level2 smaller">
+<h2>Synthetic Data in R: “Real” Data</h2>
+<p>Simulate a small study: vocabulary score predicted by age (months) and condition (bilingual vs.&nbsp;monolingual), with some correlation between age and vocabulary.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb2-2"><a href=""></a></span>
+<span id="cb2-3"><a href=""></a>n <span class="ot">&lt;-</span> <span class="dv">60</span></span>
+<span id="cb2-4"><a href=""></a></span>
+<span id="cb2-5"><a href=""></a>real_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb2-6"><a href=""></a>  <span class="at">child_id   =</span> <span class="fu">paste0</span>(<span class="st">"C"</span>, <span class="fu">sprintf</span>(<span class="st">"%02d"</span>, <span class="dv">1</span><span class="sc">:</span>n)),</span>
+<span id="cb2-7"><a href=""></a>  <span class="at">age_months =</span> <span class="fu">round</span>(<span class="fu">rnorm</span>(n, <span class="at">mean =</span> <span class="dv">30</span>, <span class="at">sd =</span> <span class="dv">6</span>)),</span>
+<span id="cb2-8"><a href=""></a>  <span class="at">condition  =</span> <span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">"bilingual"</span>, <span class="st">"monolingual"</span>), n, <span class="at">replace =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb2-9"><a href=""></a>  <span class="at">vocab_score =</span> <span class="cn">NA</span></span>
+<span id="cb2-10"><a href=""></a>)</span>
+<span id="cb2-11"><a href=""></a></span>
+<span id="cb2-12"><a href=""></a><span class="co"># Vocabulary score depends on age and condition, plus noise</span></span>
+<span id="cb2-13"><a href=""></a>real_data<span class="sc">$</span>vocab_score <span class="ot">&lt;-</span> <span class="fu">with</span>(</span>
+<span id="cb2-14"><a href=""></a>  real_data,</span>
+<span id="cb2-15"><a href=""></a>  <span class="fu">round</span>(<span class="dv">10</span> <span class="sc">+</span> <span class="fl">1.5</span> <span class="sc">*</span> age_months <span class="sc">+</span></span>
+<span id="cb2-16"><a href=""></a>          <span class="fu">ifelse</span>(condition <span class="sc">==</span> <span class="st">"bilingual"</span>, <span class="sc">-</span><span class="dv">5</span>, <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb2-17"><a href=""></a>          <span class="fu">rnorm</span>(n, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">8</span>))</span>
+<span id="cb2-18"><a href=""></a>)</span>
+<span id="cb2-19"><a href=""></a></span>
+<span id="cb2-20"><a href=""></a><span class="fu">head</span>(real_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  child_id age_months   condition vocab_score
+1      C01         27   bilingual          53
+2      C02         29 monolingual          58
+3      C03         39   bilingual          65
+4      C04         30   bilingual          45
+5      C05         31   bilingual          62
+6      C06         40 monolingual          65</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="fu">summary</span>(real_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   child_id           age_months     condition          vocab_score   
+ Length:60          Min.   :18.00   Length:60          Min.   :24.00  
+ Class :character   1st Qu.:27.00   Class :character   1st Qu.:43.75  
+ Mode  :character   Median :30.00   Mode  :character   Median :53.00  
+                    Mean   :30.42                      Mean   :52.20  
+                    3rd Qu.:34.00                      3rd Qu.:59.00  
+                    Max.   :43.00                      Max.   :78.00  </code></pre>
+</div>
+</div>
+</section>
+<section id="synthetic-data-in-r-synthpop" class="slide level2 smaller">
+<h2>Synthetic Data in R: <code>synthpop</code></h2>
+<p><code>synthpop</code> learns the joint structure of the real dataset, including relationships between variables, and generates new records that preserve that structure without corresponding to real individuals. <code>child_id</code> is dropped first since it is just an identifier.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href=""></a>synth_input <span class="ot">&lt;-</span> real_data[, <span class="fu">c</span>(<span class="st">"age_months"</span>, <span class="st">"condition"</span>, <span class="st">"vocab_score"</span>)]</span>
+<span id="cb6-2"><a href=""></a></span>
+<span id="cb6-3"><a href=""></a>synth_result <span class="ot">&lt;-</span> <span class="fu">syn</span>(synth_input, <span class="at">seed =</span> <span class="dv">123</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>CAUTION: Your data set has fewer observations (60) than we advise.
+We suggest that there should be at least 130 observations
+(100 + 10 * no. of variables used in modelling the data).
+Please check your synthetic data carefully with functions
+compare(), utility.tab(), and utility.gen().
+
+
+Variable(s): condition have been changed for synthesis from character to factor.
+
+Synthesis
+-----------
+ age_months condition vocab_score</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href=""></a>synth_data <span class="ot">&lt;-</span> synth_result<span class="sc">$</span>syn</span>
+<span id="cb8-2"><a href=""></a><span class="fu">head</span>(synth_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  age_months   condition vocab_score
+1         33 monolingual          58
+2         27   bilingual          51
+3         32 monolingual          64
+4         31   bilingual          44
+5         39   bilingual          65
+6         29 monolingual          43</code></pre>
+</div>
+</div>
+</section>
+<section id="synthetic-data-in-r-synthpop-1" class="slide level2 smaller">
+<h2>Synthetic Data in R: <code>synthpop</code></h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href=""></a><span class="fu">summary</span>(synth_input)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   age_months     condition          vocab_score   
+ Min.   :18.00   Length:60          Min.   :24.00  
+ 1st Qu.:27.00   Class :character   1st Qu.:43.75  
+ Median :30.00   Mode  :character   Median :53.00  
+ Mean   :30.42                      Mean   :52.20  
+ 3rd Qu.:34.00                      3rd Qu.:59.00  
+ Max.   :43.00                      Max.   :78.00  </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href=""></a><span class="fu">summary</span>(synth_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   age_months     condition          vocab_score   
+ Min.   :20.00   Length:60          Min.   :24.00  
+ 1st Qu.:26.00   Class :character   1st Qu.:44.00  
+ Median :30.00   Mode  :character   Median :53.50  
+ Mean   :29.47                      Mean   :53.43  
+ 3rd Qu.:33.00                      3rd Qu.:62.25  
+ Max.   :39.00                      Max.   :78.00  </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href=""></a><span class="co"># Compare a simple model fit on real vs. synthetic data</span></span>
+<span id="cb14-2"><a href=""></a><span class="fu">lm</span>(vocab_score <span class="sc">~</span> age_months <span class="sc">+</span> condition, <span class="at">data =</span> synth_input)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = vocab_score ~ age_months + condition, data = synth_input)
+
+Coefficients:
+         (Intercept)            age_months  conditionmonolingual  
+               3.983                 1.496                 4.954  </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href=""></a><span class="fu">lm</span>(vocab_score <span class="sc">~</span> age_months <span class="sc">+</span> condition, <span class="at">data =</span> synth_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = vocab_score ~ age_months + condition, data = synth_data)
+
+Coefficients:
+         (Intercept)            age_months  conditionmonolingual  
+             0.01141               1.72512               4.70624  </code></pre>
+</div>
+</div>
+</section>
+<section id="synthetic-data-in-r-faux" class="slide level2 smaller">
+<h2>Synthetic Data in R: <code>faux</code></h2>
+<p><code>faux::sim_df()</code> takes an existing data frame and generates a new synthetic dataset that preserves its means, standard deviations, and correlations among numeric variables — the same basic goal as <code>synthpop</code>, but using <code>faux</code>’s simpler multivariate-normal-based approach.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href=""></a>faux_synth <span class="ot">&lt;-</span> faux<span class="sc">::</span><span class="fu">sim_df</span>(</span>
+<span id="cb18-2"><a href=""></a>  real_data[, <span class="fu">c</span>(<span class="st">"condition"</span>, <span class="st">"age_months"</span>, <span class="st">"vocab_score"</span>)],</span>
+<span id="cb18-3"><a href=""></a>  <span class="at">n =</span> n,</span>
+<span id="cb18-4"><a href=""></a>  <span class="at">between =</span> <span class="st">"condition"</span></span>
+<span id="cb18-5"><a href=""></a>)</span>
+<span id="cb18-6"><a href=""></a></span>
+<span id="cb18-7"><a href=""></a><span class="fu">head</span>(faux_synth)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    id condition age_months vocab_score
+1 S001 bilingual   31.24660    38.83131
+2 S002 bilingual   29.89171    46.24965
+3 S003 bilingual   22.90610    48.76198
+4 S004 bilingual   33.72434    60.11988
+5 S005 bilingual   34.89969    48.34028
+6 S006 bilingual   34.56519    55.90223</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href=""></a><span class="fu">summary</span>(faux_synth)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      id             condition           age_months     vocab_score   
+ Length:120         Length:120         Min.   :15.23   Min.   :24.71  
+ Class :character   Class :character   1st Qu.:26.51   1st Qu.:42.39  
+ Mode  :character   Mode  :character   Median :29.72   Median :51.50  
+                                       Mean   :30.30   Mean   :51.95  
+                                       3rd Qu.:34.09   3rd Qu.:60.24  
+                                       Max.   :45.66   Max.   :86.47  </code></pre>
+</div>
+</div>
+</section>
+<section id="synthetic-data-in-r-faux-1" class="slide level2 smaller">
+<h2>Synthetic Data in R: <code>faux</code></h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href=""></a><span class="co"># Correlation structure, real vs. synthetic</span></span>
+<span id="cb22-2"><a href=""></a><span class="fu">cor</span>(real_data[, <span class="fu">c</span>(<span class="st">"age_months"</span>, <span class="st">"vocab_score"</span>)])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            age_months vocab_score
+age_months   1.0000000   0.6959856
+vocab_score  0.6959856   1.0000000</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href=""></a><span class="fu">cor</span>(faux_synth[, <span class="fu">c</span>(<span class="st">"age_months"</span>, <span class="st">"vocab_score"</span>)])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            age_months vocab_score
+age_months   1.0000000   0.7658666
+vocab_score  0.7658666   1.0000000</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href=""></a><span class="co"># Simple model fit, real vs. synthetic</span></span>
+<span id="cb26-2"><a href=""></a><span class="fu">lm</span>(vocab_score <span class="sc">~</span> age_months <span class="sc">+</span> condition, <span class="at">data =</span> real_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = vocab_score ~ age_months + condition, data = real_data)
+
+Coefficients:
+         (Intercept)            age_months  conditionmonolingual  
+               3.983                 1.496                 4.954  </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href=""></a><span class="fu">lm</span>(vocab_score <span class="sc">~</span> age_months <span class="sc">+</span> condition, <span class="at">data =</span> faux_synth)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = vocab_score ~ age_months + condition, data = faux_synth)
+
+Coefficients:
+         (Intercept)            age_months  conditionmonolingual  
+               3.720                 1.530                 3.751  </code></pre>
+</div>
+</div>
+<p><code>sim_design()</code> remains useful separately, for the case where there is no existing dataset yet and a study is being simulated from specified effect sizes ahead of data collection (e.g., for a power analysis or preregistration).</p>
+</section>
+<section id="synthetic-data-in-jasp" class="slide level2 smaller">
+<h2>Synthetic Data in JASP</h2>
+<ul>
+<li>JASP supports simulating data for teaching and pipeline testing without requiring R syntax</li>
+<li>Useful for collaborators who are less comfortable in code but need to evaluate an analysis plan</li>
+</ul>
+</section>
+<section id="synthetic-data-in-jasp-1" class="slide level2 smaller">
+<h2>Synthetic Data in JASP</h2>
+<ul>
+<li>Be sure to click community!</li>
+</ul>
+
+<img data-src="images/clipboard-51684848.png" class="r-stretch"></section>
+<section id="synthetic-data-in-jasp-2" class="slide level2 smaller">
+<h2>Synthetic Data in JASP</h2>
+
+<img data-src="images/clipboard-979938235.png" class="r-stretch"></section>
+<section id="synthetic-data-in-jasp-3" class="slide level2 smaller">
+<h2>Synthetic Data in JASP</h2>
+
+<img data-src="images/clipboard-2235724916.png" class="r-stretch"></section>
+<section id="synthetic-data-in-jasp-4" class="slide level2 smaller">
+<h2>Synthetic Data in JASP</h2>
+
+<img data-src="images/clipboard-3567523033.png" class="r-stretch"></section>
+<section id="synthetic-data-in-jasp-5" class="slide level2 smaller">
+<h2>Synthetic Data in JASP</h2>
+
+<img data-src="images/clipboard-1058086211.png" class="r-stretch"></section>
+<section id="what-youve-learned" class="slide level2 smaller">
+<h2><strong>What You’ve Learned</strong></h2>
+<ul>
+<li>Open science is a full set of practices, not just data sharing: preregistration, materials, code, access, and replication all count</li>
+</ul>
+<!-- -->
+<ul>
+<li><p>Where materials are deposited and how they’re licensed shapes whether they can actually be reused</p></li>
+<li><p>OSF’s role is changing; Zenodo, Figshare, Dataverse, and TROLLing are the practical landing spots for active projects going forward</p></li>
+<li><p>Cross-cultural and multi-site collaborations need locally embedded practices, not a single norm applied everywhere</p></li>
+<li><p>Synthetic data (via <code>synthpop</code> or <code>faux</code>) offers a way to prototype, teach, and preregister analysis pipelines without exposing real data</p></li>
+</ul>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-al-hoorie2024" class="csl-entry" role="listitem">
+Al-Hoorie, Ali H., Carlo Cinaglia, Phil Hiver, Amanda Huensch, Daniel R. Isbell, Constant Leung, and Ekaterina Sudina. 2024. <span>“Open Science: Considerations and Issues for TESOL Research.”</span> <em>TESOL Quarterly</em> 58 (1): 537–56. <a href="https://doi.org/10.1002/tesq.3304">https://doi.org/10.1002/tesq.3304</a>.
+</div>
+<div id="ref-baumgartner2023" class="csl-entry" role="listitem">
+Baumgartner, Heidi A., Nicolás Alessandroni, Krista Byers-Heinlein, Michael C. Frank, J. Kiley Hamlin, Melanie Soderstrom, Jan G. Voelkel, Robb Willer, Francis Yuen, and Nicholas A. Coles. 2023. <span>“How to Build up Big Team Science: A Practical Guide for Large-Scale Collaborations.”</span> <em>Royal Society Open Science</em> 10 (6): 230235. <a href="https://doi.org/10.1098/rsos.230235">https://doi.org/10.1098/rsos.230235</a>.
+</div>
+<div id="ref-begumali2024" class="csl-entry" role="listitem">
+Begum Ali, Jannath, Rebecca Holman, Amy L. Goodwin, Siofra Heraty, and Emily J. H. Jones. 2024. <span>“Parent Attitudes Towards Data Sharing in Developmental Science.”</span> <em>Open Research Europe</em> 3 (June): 182. <a href="https://doi.org/10.12688/openreseurope.16516.2">https://doi.org/10.12688/openreseurope.16516.2</a>.
+</div>
+<div id="ref-debruine2021" class="csl-entry" role="listitem">
+DeBruine, Lisa. 2021. <em>Faux: Simulation for Factorial Designs</em>. Zenodo. <a href="https://doi.org/10.5281/ZENODO.2669586">https://doi.org/10.5281/ZENODO.2669586</a>.
+</div>
+<div id="ref-forscher2020" class="csl-entry" role="listitem">
+Forscher, Patrick S., Eric-Jan Wagenmakers, Nicholas Alvaro Coles, Miguel Alejandro A. Silan, Natalia Bezerra Dutra, Dana Basnight-Brown, and Hans IJzerman. 2020. <span>“The Benefits, Barriers, and Risks of Big Team Science.”</span> <a href="https://doi.org/10.31234/osf.io/2mdxh">https://doi.org/10.31234/osf.io/2mdxh</a>.
+</div>
+<div id="ref-gennetian2022" class="csl-entry" role="listitem">
+Gennetian, Lisa A., Michael C. Frank, and Catherine S. Tamis-LeMonda. 2022. <span>“Open Science in Developmental Science.”</span> <em>Annual Review of Developmental Psychology</em> 4: 377–97. <a href="https://doi.org/10.1146/annurev-devpsych-120920-042335">https://doi.org/10.1146/annurev-devpsych-120920-042335</a>.
+</div>
+<div id="ref-goldfeld2026" class="csl-entry" role="listitem">
+Goldfeld, Keith, and Jacob Wujciak-Jens. 2026. <em>Simstudy: Simulation of Study Data</em>. <a href="https://cran.r-project.org/web/packages/simstudy/index.html">https://cran.r-project.org/web/packages/simstudy/index.html</a>.
+</div>
+<div id="ref-jordon" class="csl-entry" role="listitem">
+Jordon, James, Lukasz Szpruch, Florimond Houssiau, Mirko Bottarelli, Giovanni Cherubin, Carsten Maple, Samuel N. Cohen, and Adrian Weller. n.d. <span>“Synthetic Data – What, Why and How?”</span> <a href="https://doi.org/10.48550/arXiv.2205.03257">https://doi.org/10.48550/arXiv.2205.03257</a>.
+</div>
+<div id="ref-koch2016" class="csl-entry" role="listitem">
+Koch, Christof, and Allan Jones. 2016. <span>“Big Science, Team Science, and Open Science for Neuroscience.”</span> <em>Neuron</em> 92 (3): 612–16. <a href="https://doi.org/10.1016/j.neuron.2016.10.019">https://doi.org/10.1016/j.neuron.2016.10.019</a>.
+</div>
+<div id="ref-marschik2023" class="csl-entry" role="listitem">
+Marschik, Peter B., Tomas Kulvicius, Sarah Flügge, Claudius Widmann, Karin Nielsen-Saines, Martin Schulte-Rüther, Britta Hüning, et al. 2023. <span>“Open Video Data Sharing in Developmental Science and Clinical Practice.”</span> <em>iScience</em> 26 (4). <a href="https://doi.org/10.1016/j.isci.2023.106348">https://doi.org/10.1016/j.isci.2023.106348</a>.
+</div>
+<div id="ref-nowok2016" class="csl-entry" role="listitem">
+Nowok, Beata, Gillian M. Raab, and Chris Dibben. 2016. <span>“Synthpop: Bespoke Creation of Synthetic Data in R.”</span> <em>Journal of Statistical Software</em> 74 (October): 1–26. <a href="https://doi.org/10.18637/jss.v074.i11">https://doi.org/10.18637/jss.v074.i11</a>.
+</div>
+<div id="ref-oakley2025" class="csl-entry" role="listitem">
+Oakley, Beth, Alexandra Lautarescu, Tony Charman, Christopher Chatham, Eva Loth, Christian Beckmann, Thomas Bourgeron, et al. 2025. <span>“Data Sharing in Child and Adolescent Psychiatry Research: Key Challenges (and Some Potential Solutions).”</span> <em>Open Research Europe</em> 5 (March): 93. <a href="https://doi.org/10.12688/openreseurope.18147.1">https://doi.org/10.12688/openreseurope.18147.1</a>.
+</div>
+<div id="ref-patrinos2022" class="csl-entry" role="listitem">
+Patrinos, Dimitri, Bartha Maria Knoppers, David P. Laplante, Noriyeh Rahbari, and Ashley Wazana. 2022. <span>“Sharing and Safeguarding Pediatric Data.”</span> <em>Frontiers in Genetics</em> 13 (June). <a href="https://doi.org/10.3389/fgene.2022.872586">https://doi.org/10.3389/fgene.2022.872586</a>.
+</div>
+<div id="ref-plesser2018" class="csl-entry" role="listitem">
+Plesser, Hans E. 2018. <span>“Reproducibility Vs. Replicability: A Brief History of a Confused Terminology.”</span> <em>Frontiers in Neuroinformatics</em> 11 (January). <a href="https://doi.org/10.3389/fninf.2017.00076">https://doi.org/10.3389/fninf.2017.00076</a>.
+</div>
+<div id="ref-srivastava" class="csl-entry" role="listitem">
+Srivastava, Arushi, Biljana Gjoneska, Sergio Barbosa, Marta Kowal, Maria Montefinese, Maja Becker, and Erin Michelle Buchanan. n.d. <span>“Ethical Challenges and Opportunities in Global Big Team Science: Lessons from the Psychological Science Accelerator.”</span> <a href="https://doi.org/10.31234/osf.io/kwmx4_v2">https://doi.org/10.31234/osf.io/kwmx4_v2</a>.
+</div>
+<div id="ref-syed" class="csl-entry" role="listitem">
+Syed, Moin, and Ummul-Kiram Kathawalla. n.d. <span>“Cultural Psychology, Diversity, and Representation in Open Science.”</span> <a href="https://doi.org/10.31234/osf.io/t7hp2">https://doi.org/10.31234/osf.io/t7hp2</a>.
+</div>
+<div id="ref-weinstein2026" class="csl-entry" role="listitem">
+Weinstein, Netta, Sakshi Ghai, Tia Moin, Nicole Legate, Lennia Matos, and Andrew K. Przybylski. 2026. <span>“Realizing the Full Potential of Big-Team Behavioral Science: How Global Collaborations Can Benefit From Participatory Open-Research Practices.”</span> <em>Advances in Methods and Practices in Psychological Science</em> 9 (2): 25152459261423052. <a href="https://doi.org/10.1177/25152459261423052">https://doi.org/10.1177/25152459261423052</a>.
+</div>
+</div>
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="open-science-talk_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="open-science-talk_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="open-science-talk_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="open-science-talk_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="open-science-talk_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="open-science-talk_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="open-science-talk_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="open-science-talk_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="open-science-talk_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="open-science-talk_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
